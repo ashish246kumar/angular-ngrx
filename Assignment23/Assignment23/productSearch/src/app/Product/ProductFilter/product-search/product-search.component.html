@@ -1,0 +1,83 @@
+<!-- 
+   
+   
+   
+   
+   
+   
+   
+   <div >
+    <div>
+      <h3>Search Product</h3>
+      <hr />
+            <p  [style.color]="'red'" >{{error}}</p>
+      <form [formGroup]="searchForm" (ngSubmit)="searchProduct()">
+        <div>
+          <label>ProductName</label>
+          <input type="text" class="form-control" formControlName="productName" />
+        </div>
+  
+        <div>
+          <label>Brand</label>
+          <input type="text" class="form-control" formControlName="brand" />
+        </div>
+  
+        <div>
+          <label>Color</label>
+          <input type="text" class="form-control" formControlName="color" />
+        </div>
+  
+        <div>
+          <label>Price</label>
+          <input type="text" class="form-control" formControlName="price" />
+        </div>
+  
+        <div>
+          <button type="submit">Search Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+   -->
+
+
+   <div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row" style="padding-top: 20px;">
+             <div class="col-md-6 offset-md-3">
+              <mat-card class="login-card"> 
+                
+              <h1 class="text-center">Search Here!!</h1>
+                 <form [formGroup]="searchForm" (ngSubmit)="searchProduct()">
+                  <mat-form-field appearance="outline" class="full-width" style="padding-left: 15px; padding-right: 15px;">
+                      <mat-label>ProductName</mat-label>
+                      <input    class="form-control" formControlName="productName"
+                      matInput placeholder="Enter ProductName"  >
+                    
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="full-width" style="padding-left: 15px; padding-right: 15px;">
+                      <mat-label>Brand</mat-label>
+                      <input type="text" class="form-control" formControlName="brand"  matInput placeholder="Enter Brand" >
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="full-width" style="padding-left: 15px; padding-right: 15px;">
+                    <mat-label>Color</mat-label>
+                    <input type="text" class="form-control" formControlName="color"  matInput placeholder="Enter color" >
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="full-width" style="padding-left: 15px; padding-right: 15px;">
+                  <mat-label>Price</mat-label>
+                  <input type="text" class="form-control" formControlName="price"  matInput placeholder="Enter color" >
+              </mat-form-field>
+                  <div class="container text-center mb20">
+                      <button mat-raised-button type="submit" color="primary">Search Product</button>
+                     
+                  </div>
+                 </form>
+              </mat-card> 
+              </div>
+          
+          </div>
+      </div>
+  </div>        
+  
+              

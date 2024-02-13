@@ -1,0 +1,21 @@
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>productName</th>
+        <th>brand</th>
+        <th>color</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.productName }}</td>
+        <td>{{ product.brand }}</td>
+        <td>{{ product.color }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
